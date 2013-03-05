@@ -1,3 +1,5 @@
+{<img src="https://travis-ci.org/sikachu/verification.png" />}[https://travis-ci.org/sikachu/verification]
+
 This module provides a class-level method for specifying that certain
 actions are guarded against being called without certain prerequisites
 being met. This is essentially a special kind of before_filter.
