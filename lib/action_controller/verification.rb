@@ -112,7 +112,7 @@ module ActionController #:nodoc:
     end
 
     def verify_request_xhr_status(options) # :nodoc:
-      !!request.xhr? != options[:xhr] unless options[:xhr].nil?
+      !options[:xhr] || request.xhr?
     end
 
     def apply_redirect_to(redirect_to_option) # :nodoc:
